@@ -23,12 +23,12 @@ Before you begin, ensure you have met the following requirements:
 2. Navigate to the project directory:
    
    ```bash
-  cd your-project
+  ```cd your-project```
 
 3. Run the project
  
    ```bash
-  npm run dev
+  ```npm run dev```
 
     
    
