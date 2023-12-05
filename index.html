@@ -1,12 +1,506 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/App.css">
     <title>Test kids</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="relative">
+      <!-- Navbar -->
+      <div id="navbar" class="fixed bg-white w-full z-[100]">
+        <nav id="nav" class="container w-full mx-auto p-5 flex flex-row items-center justify-between">
+          <div class="">
+            <img src="public/assets/logo-ligasmk-dark.png" alt="">
+          </div>
+          <ul class="flex flex-row space-x-10 items-center font-semibold text-gray-700">
+            <li>
+              <a href="#home" class="flex flex-row space-x-2 hover:text-[#3A10E5]">
+                <p>Home</p>
+                <img class="" src="public/assets/icon-arrow-bottom.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#about_us" class="flex flex-row space-x-2 hover:text-[#3A10E5]">
+                <p>About us</p>
+                <img class="" src="public/assets/icon-arrow-bottom.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#kelas" class="flex flex-row space-x-2 hover:text-[#3A10E5]">
+                <p>Kelas</p>
+                <img class="" src="public/assets/icon-arrow-bottom.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#blog" class="flex flex-row space-x-2 hover:text-[#3A10E5]">
+                <p>Blog</p>
+                <img class="" src="public/assets/icon-arrow-bottom.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#kontak" class="flex flex-row space-x-2 hover:text-[#3A10E5]">Kontak</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Banner Header -->
+      <header id="home" class="bg-[#F0F3FF] flex flex-col justify-center min-h-screen">
+        <div class="container mx-auto flex flex-row space-x-32 pt-10 pb-32">
+          <div class="flex flex-col space-y-10 flex-1 justify-center">
+            <h1 class="text-6xl font-extrabold leading-snug">Bergabunglah dengan jutaan orang dan belajar hal baru</h1>
+            <p class="text-zinc-700">Mengubah kehidupan, bisnis, dan bangsa melalui transformasi talenta di bidang teknologi digital.</p>
+            <button class="bg-[#3A10E5] hover:bg-[#12338c] hover:scale-105 hover:shadow-md shadow-none rounded-sm flex text-white py-3 px-5 text-xs max-w-[200px] justify-between">Mulai Belajar <p>&#8594;</p></button>
+          </div>
+          <div class="flex flex-1 justify-center">
+            <img src="public/assets/shape-diagram.png" class="object-cover w-[450px]" alt="">
+          </div>
+        </div>
+      </header>
+      <!-- Yellow Section -->
+      <div class="bg-[#FACB3B]">
+        <div class="container mx-auto flex flex-row justify-between py-16">
+          <div class="flex flex-row space-x-8">
+            <img src="public/assets/icon-online-education.svg" alt="">
+            <div class="flex flex-col justify-center">
+              <h5 class="text-2xl font-bold whitespace-nowrap">Membangun Karir</h5>
+              <p class="font-semibold whitespace-nowrap">Semua yang butuh kerja</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-8">
+            <img src="public/assets/icon-globe-handphone.svg" alt="">
+            <div class="flex flex-col justify-center">
+              <h5 class="text-2xl font-bold whitespace-nowrap">Cari Materi Belajar</h5>
+              <p class="font-semibold whitespace-nowrap">Seberapa pengetahuan kamu</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-8">
+            <img src="public/assets/icon-online-education-laptop.svg" alt="">
+            <div class="flex flex-col justify-center">
+              <h5 class="text-2xl font-bold whitespace-nowrap">Kuasai Skill Baru</h5>
+              <p class="font-semibold whitespace-nowrap">Fokus apa yang dibutuhkan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Courses -->
+      <main id="about_us" class="container mx-auto py-20">
+        <div class="flex flex-row items-center justify-between">
+          <h3 class="text-4xl font-bold relative">Pembelajaran populer <span class="absolute px-16 py-2 z-[-1] bg-[#FDD5A1] -bottom-1 right-0"></span></h3>
+          <ul class="flex flex-row space-x-2">
+            <li class="text-gray-400 hover:text-black py-2 px-6 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 font-bold cursor-pointer">Javascript</li>
+            <li class="text-gray-400 hover:text-black py-2 px-6 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 font-bold cursor-pointer">Python</li>
+            <li class="text-gray-400 hover:text-black py-2 px-6 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 font-bold cursor-pointer">Web Development</li>
+            <li class="text-gray-400 hover:text-black py-2 px-6 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 font-bold cursor-pointer">Art & Design</li>
+            <li class="text-gray-400 hover:text-black py-2 px-6 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 font-bold cursor-pointer">Business</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-4 grid-rows-2 py-16 gap-10">
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-1.png" alt="course-1.png" class="w-full">
+              <img src="public/assets/new-orange.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-2.png" alt="course-2.png" class="w-full">
+              <img src="public/assets/new-old-blue.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-3.png" alt="course-3.png" class="w-full">
+              <img src="public/assets/new-pink.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-4.png" alt="course-4.png" class="w-full">
+              <img src="public/assets/new-lightblue.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-5.png" alt="course-5.png" class="w-full">
+              <img src="public/assets/new-orange.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-6.png" alt="course-6.png" class="w-full">
+              <img src="public/assets/new-old-blue.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-7.png" alt="course-7.png" class="w-full">
+              <img src="public/assets/new-pink.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border max-w-[330px]">
+            <div class="relative">
+              <img src="public/assets/course-8.png" alt="course-8.png" class="w-full">
+              <img src="public/assets/new-lightblue.png" class="absolute top-5 left-5" alt="new.png">
+            </div>
+            <div class="flex flex-col p-8 justify-between h-[230px] rounded-sm">
+              <div class="flex flex-col space-y-2">
+                <p class="text-[#3A10E5] font-bold ">Alen Mask</p>
+                <h5 class="font-extrabold text-xl">Why Learn Intermediate SQL for Marketers?</h5>
+              </div>
+              <div class="flex flex-row space-x-8">
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-hamburger.svg" alt="">
+                  <p class="font-semibold">Beginner</p>
+                </div>
+                <div class="flex flex-row space-x-2 items-center">
+                  <img src="public/assets/icon-copy.svg" alt="">
+                  <p class="font-semibold">3 Lessons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Membership Section -->
+      <div class="bg-[#FFF0E5]">
+        <div class="container mx-auto py-20 flex flex-row items-center justify-between">
+          <img src="public/assets/membership-image.png" alt="">
+          <h3 class="text-5xl font-bold px-20">Dapatkan membership Pro GRATIS untuk kelas kamu.</h3>
+          <button class="bg-[#3A10E5] hover:bg-[#12338c] hover:scale-105 hover:shadow-md shadow-none rounded-sm flex text-white py-3 px-8 text-xs max-w-[200px] justify-center whitespace-nowrap">Lihat semua kelas.</button>
+        </div>
+      </div>
+      <!-- Kategori -->
+      <main id="kelas" class="container mx-auto py-20">
+        <div class="flex flex-row justify-center">
+          <h3 class="relative text-4xl font-bold">Kategori populer <span class="absolute px-16 py-2 z-[-1] bg-[#FDD5A1] -bottom-1 right-0"></span></h3>
+        </div>
+        <div class="grid grid-cols-4 grid-rows-2 py-16 gap-10">
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-chemical.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Kimia</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-calendar.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Managemen</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-pencil-ruler.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Seni Budaya</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-briefcase.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Bisnis</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-science.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Astrologi</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-rocket.png" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">SEO</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-space.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Kosmologi</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4 bg-white drop-shadow-xl p-4 rounded-md">
+            <div class="bg-[#F0F3FF] p-4 rounded-full w-fit">
+              <img src="public/assets/icon-microscope.svg" alt="">
+            </div>
+            <div class="flex flex-col justify-center">
+              <h5 class="font-bold text-xl">Biologi</h5>
+              <p class="text-sm text-zinc-700">2 Kelas</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row items-center space-x-3 justify-center">
+          <p class="font-semibold text-[#3A10E5]">Explore All Courses</p>
+          <img src="/public/assets/icon-double-next.svg" alt="">
+        </div>
+      </main>
+      <!-- Business Section -->
+      <div class="container mx-auto py-20 bg-[#F0F3FF]">
+        <div class="flex flex-row items-center mx-auto max-w-4xl">
+          <div class="flex flex-row flex-1">
+            <img src="public/assets/business-image.png" alt="business.png">
+          </div>
+          <div class="flex flex-col flex-1 space-y-10">
+            <h3 class="text-5xl font-extrabold">Tingkatan skill tim Anda.</h3>
+            <p class="text-zinc-700">Berikan tim Anda pengetahuan, pengalaman, dan keyakinan yang mereka butuhkan untuk mengatasi setiap masalah. Kami ingin menciptakan dunia di mana siapa pun dapat membangun sesuatu yang bermakna.</p>
+            <button class="bg-[#3A10E5] hover:bg-[#12338c] hover:scale-105 hover:shadow-md shadow-none rounded-sm flex text-white py-3 px-6 text-xs max-w-[150px] justify-center whitespace-nowrap">Try For Business</button>
+          </div>
+        </div>
+      </div>
+      <!-- Event Section -->
+      <main id="blog" class="container mx-auto py-20">
+        <div class="flex flex-row justify-center">
+          <h3 class="relative text-4xl font-bold">Event sedang berlangsung di dekatmu <span class="absolute px-[168px] py-2 left-[100px] z-[-1] bg-[#FDD5A1] -bottom-1"></span></h3>
+        </div>
+        <div class="grid grid-cols-3 py-16 gap-x-10">
+          <div class="flex flex-col space-y-5">
+            <img src="public/assets/event-1.png" alt="event-1.png" class="w-full">
+            <div class="flex flex-row space-x-2">
+              <div class="flex flex-col border-r pr-4 border-r-zinc-300 items-center">
+                <p class="text-[#3A10E5] font-extrabold text-4xl">21</p>
+                <p class="font-bold text-sm text-zinc-600">March</p>
+              </div>
+              <div class="flex flex-row space-x-2 items-center">
+                <img src="public/assets/icon-location.svg" alt="location.png">
+                <p class="text-sm font-semibold whitespace-nowrap text-zinc-400">North Caroline United States</p>
+              </div>
+            </div>
+            <h5 class="font-extrabold text-xl">Linear Regression in Python: Introduction to Simple Linear</h5>
+          </div>
+          <div class="flex flex-col space-y-5">
+            <img src="public/assets/event-2.png" alt="event-1.png" class="w-full">
+            <div class="flex flex-row space-x-2">
+              <div class="flex flex-col border-r pr-4 border-r-zinc-300 items-center">
+                <p class="text-[#3A10E5] font-extrabold text-4xl">21</p>
+                <p class="font-bold text-sm text-zinc-600">March</p>
+              </div>
+              <div class="flex flex-row space-x-2 items-center">
+                <img src="public/assets/icon-location.svg" alt="location.png">
+                <p class="text-sm font-semibold whitespace-nowrap text-zinc-400">North Caroline United States</p>
+              </div>
+            </div>
+            <h5 class="font-extrabold text-xl">Linear Regression in Python: Introduction to Simple Linear</h5>
+          </div>
+          <div class="flex flex-col space-y-5">
+            <img src="public/assets/event-3.png" alt="event-1.png" class="w-full">
+            <div class="flex flex-row space-x-2">
+              <div class="flex flex-col border-r pr-4 border-r-zinc-300 items-center">
+                <p class="text-[#3A10E5] font-extrabold text-4xl">21</p>
+                <p class="font-bold text-sm text-zinc-600">March</p>
+              </div>
+              <div class="flex flex-row space-x-2 items-center">
+                <img src="public/assets/icon-location.svg" alt="location.png">
+                <p class="text-sm font-semibold whitespace-nowrap text-zinc-400">North Caroline United States</p>
+              </div>
+            </div>
+            <h5 class="font-extrabold text-xl">Linear Regression in Python: Introduction to Simple Linear</h5>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer id="kontak" class="bg-[#090E23]">
+        <div class="container mx-auto pt-20">
+          <div class="flex flex-row space-x-32 justify-center">
+            <div class="flex flex-col space-y-10 flex-[2_2_0%] pb-32">
+              <img src="public/assets/logo-ligasmk-white.png" class="w-fit" alt="ligasmk.png" />
+              <p class="text-zinc-400 leading-normal">Mengubah kehidupan, bisnis, dan bangsa melalui transformasi talenta di bidang teknologi digital.</p>
+              <div class="flex flex-row space-x-6 px-3">
+                <img src="public/assets/icon-facebook-white.svg" alt="">
+                <img src="public/assets/icon-twitter-white.svg" alt="">
+                <img src="public/assets/icon-linkedin-white.svg" alt="">
+                <img src="public/assets/icon-youtube-white.svg" alt="">
+              </div>
+            </div>
+            <div class="flex flex-col flex-1 ">
+              <h5 class='font-extrabold text-xl text-white pb-10'>Resources</h5>
+              <ul class='flex flex-col space-y-4 text-zinc-400'>
+                <li>Build Career</li>
+                <li>Explore Subjects</li>
+                <li>Gain a Skill</li>
+              </ul>
+            </div>
+            <div class="flex flex-col flex-1">
+              <h5 class='font-extrabold text-xl text-white pb-10'>Support</h5>
+              <ul class='flex flex-col space-y-4 text-zinc-400'>
+                <li>Web Development</li>
+                <li>Data Science</li>
+                <li>Machine Learning</li>
+                <li>Developer Tools</li>
+                <li>Web Design</li>
+              </ul>
+            </div>
+            <div class="flex flex-col flex-[2_2_0%]">
+              <h5 class='font-extrabold text-xl text-white pb-10'>Download Now</h5>
+              <ul class='flex flex-col space-y-4 text-zinc-400'>
+                <li class="bg-white rounded-md w-fit py-2 px-4"><img src="public/assets/logo-appstore.png" alt=""></li>
+                <li class="bg-white rounded-md w-fit py-2 px-4"><img src="public/assets/logo-googleplay.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-t border-t-gray-600 flex flex-row justify-between py-6">
+            <ul class="flex flex-row space-x-10 text-zinc-400">
+              <li>Site Map</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Condition</li>
+              <li>Contact Us</li>
+              <li>Forums</li>
+            </ul>
+            <p class="text-zinc-400"><a href="https://www.instagram.com/rfkhwnprnm/">Created By Rafi Ikhwan Purnama</a></p>
+            <p class="text-zinc-400">Liga SMK 2023</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function navbarScroll() {
+        const navbar = document.getElementById('navbar')
+        const nav = document.getElementById('nav')
+        if (window.scrollY > 100) {
+          navbar.classList.add('bg-opacity-0')
+          nav.classList.add('max-w-full')
+          nav.classList.remove('container')
+        } else {
+          navbar.classList.remove('bg-opacity-0')
+          nav.classList.remove('max-w-full')
+          nav.classList.add('container')
+        }
+      }
+      window.addEventListener('scroll', navbarScroll);
+      window.addEventListener('load', navbarScroll);
+    </script>
   </body>
 </html>
